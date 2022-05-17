@@ -1,4 +1,4 @@
-[
+const icons =[
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,20 @@
 		color: 'blue'
 	}
 ];
+
+// Milestone 1
+// Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
+
+const container = document.querySelector(".container");
+
+for (let i = 0; i < icons.length; i++) {
+   const iconHTML = `
+   <div id="icons">
+        <i class="${icons[i].prefix}solid ${icons[i].prefix}${icons[i].name}"></i>${icons[i].name}</div>
+    </div>
+   `;
+   container.innerHTML+=iconHTML;
+}
+
+
+
