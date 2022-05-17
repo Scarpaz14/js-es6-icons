@@ -20,7 +20,7 @@ header{
     flex-wrap: wrap;
 }
 
-#icons{
+.icons{
     width: 200px;
     margin: 20px;
     height:100px;

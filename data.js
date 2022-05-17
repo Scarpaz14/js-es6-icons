@@ -121,8 +121,9 @@ const container = document.querySelector(".container");
 
 for (let i = 0; i < icons.length; i++) {
    const iconHTML = `
-   <div id="icons">
-        <i class="${icons[i].prefix}solid ${icons[i].prefix}${icons[i].name}"></i>${icons[i].name}</div>
+   <div class="icons">
+        <i style="color:${icons[i].color}" class="${icons[i].family} ${icons[i].prefix}${icons[i].name}"></i>
+		<div class="name">${icons[i].name}</div>
     </div>
    `;
    
