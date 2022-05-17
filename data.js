@@ -118,12 +118,14 @@ const icons =[
 
 const container = document.querySelector(".container");
 
+
 for (let i = 0; i < icons.length; i++) {
    const iconHTML = `
    <div id="icons">
         <i class="${icons[i].prefix}solid ${icons[i].prefix}${icons[i].name}"></i>${icons[i].name}</div>
     </div>
    `;
+   
    container.innerHTML+=iconHTML;
 }
 
